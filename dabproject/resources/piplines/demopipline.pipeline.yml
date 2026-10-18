@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    pipeline_new_pipeline_2026_10_17_15_25:
+      name: "New Pipeline 2026-10-17 15:25"
+      libraries:
+        - glob:
+            include: "../../src/pipelines/New Pipeline 2026-10-17 15:25/transformations/**"
+      schema: bronze
+      continuous: false
+      photon: true
+      channel: CURRENT
+      catalog: ${var.catalog_name}
+      serverless: true
+      root_path: "../../src/pipelines/New Pipeline 2026-10-17 15:25"
